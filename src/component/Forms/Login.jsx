@@ -47,7 +47,7 @@ const Login = () => {
             {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
           </div>
 
-          <button type="submit" className="w-full bg-blue-500 text-white p-3 rounded-lg">
+          <button type="submit" className="w-full bg-violet-600 text-white p-3 rounded-lg">
             Login
           </button>
         </form>

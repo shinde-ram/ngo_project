@@ -19,22 +19,22 @@ function ListTop() {
 
             <div className="flex-row justify-center items-center md:gap-6 space-y-4 md:flex ">
 
-              <div className="bg-blue-300 shadow-lg p-6 rounded-lg transform transition hover:scale-105">
+              <div className="bg-blu  shadow-lg p-6 rounded-lg transform transition hover:scale-105" style={{backgroundColor:'#B9B7BD'}}>
                 <BiSolidDonateHeart className="h-12 w-12 mx-auto mb-4 object-fit" />
                 <h3 className="text-2xl font-semibold text-blue-700">Donate</h3>
-                <p className="text-gray-600">Make a financial contribution to support NGO projects.</p>
+                <p className="text-black">Make a financial contribution to support NGO projects.</p>
               </div>
 
-              <div className="bg-blue-300 shadow-lg p-6 rounded-lg transform transition hover:scale-105">
+              <div className="shadow-lg p-6 rounded-lg transform transition hover:scale-105" style={{backgroundColor:'#B9B7BD'}}>
                 <TiGroup className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-blue-700">Volunteer</h3>
-                <p className="text-gray-600">Give your time and skills to help NGOs achieve their goals.</p>
+                <p className="text-black">Give your time and skills to help NGOs achieve their goals.</p>
               </div>
 
-              <div className="bg-blue-300 shadow-lg p-6 rounded-lg transform transition hover:scale-105">
+              <div className=" shadow-lg p-6 rounded-lg transform transition hover:scale-105" style={{backgroundColor:'#B9B7BD'}}>
                 <GiAwareness className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-blue-700">Raise Awareness</h3>
-                <p className="text-gray-600">Share the stories of these NGOs to inspire others.</p>
+                <p className="text-black">Share the stories of these NGOs to inspire others.</p>
               </div>
             </div>
           </div>

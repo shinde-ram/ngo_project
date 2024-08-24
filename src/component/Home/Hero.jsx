@@ -16,9 +16,9 @@ const Hero = () => {
       {/* Top section with logo and profile icon */}
       <div className="w-full flex justify-between p-4 absolute top-0 left-0 z-20">
         <img
-          src="./images/logo3.png"
+          src="./images/mainlogo.png"
           alt="Logo"
-          className="md:w-[10%] sm:w-[15%] w-[20%] sm:ms-20"
+          className="md:w-[20%] sm:w-[15%] w-[20%] sm:ms-20 mt-5 "
         />
           <div className='flex justify-center items-center'>
         <div className="md:hidden me-4 ">

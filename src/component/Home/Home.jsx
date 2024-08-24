@@ -33,7 +33,7 @@ const Home = () => {
       </div>
 
       {/* Content below the Header */}
-      <div className={`${showHeader ? 'md:ms-[15%]' : 'ms-0'} transition-all duration-500 ease-out  `}>
+      <div className={`${showHeader ? 'md:ms-[15%] ' : 'ms-0'} transition-all duration-500 ease-out  `}>
           <hr className="border-0 h-[2px] w-full mt-4 bg-red-800" />
         <div className='flex flex-col items-center justify-center bg-gray-200 text-black'>
           <p className='md:text-6xl text-4xl trade-winds pt-6 font-bold text-center '>Our Vision</p>

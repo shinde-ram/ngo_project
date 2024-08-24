@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 
 .trade-winds {
     font-family: 'Trade Winds', cursive;
 }
+
+.rubic-scribble {
+    font-family: 'Rubik Scribble', cursive;
+  }
+  
 
 @tailwind base;
 @tailwind components;

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { IoHome ,IoListSharp,IoNewspaperSharp,IoInformationCircle,IoTrophy} from "react-icons/io5";
+import { MdContactMail,MdAccountCircle  } from "react-icons/md";
 
 const Header = () => {
   const location = useLocation();
@@ -8,38 +10,38 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/list', label: 'Lists' },
-    { href: '/events', label: 'Events' },
-    { href: '/about', label: 'About Us' },
-    { href: '/impact', label: 'Our Impact' },
-    { href: '/contact', label: 'Contact Us' },
+    { href: '/', label: 'Home', logo: IoHome },
+    { href: '/list', label: 'Lists' ,logo: IoListSharp},
+    { href: '/events', label: 'Events',logo:IoNewspaperSharp },
+    { href: '/about', label: 'About Us' ,logo:IoInformationCircle},
+    { href: '/impact', label: 'Our Impact' ,logo:IoTrophy},
+    { href: '/contact', label: 'Contact Us',logo:MdContactMail },
+    {href : '/account', label :'Account', logo:MdAccountCircle },
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-[15%] bg-blue-950 text-white flex flex-col justify-between p-4 h-screen">
+    <div className="fixed top-0 left-0 w-[15%] bg-violet-800 text-white flex flex-col justify-between p-4 h-screen">
       <div>
         {/* Logo */}
-        {/* <hr className="border-0 h-[4px] w-2/3 mx-auto bg-gradient-to-r from-white to-yellow-500 " /> */}
         <div className="flex items-center my-4 justify-center">
-          <img src="./images/logo3.png" alt="logo" className="w-[40%]" />
-
+          <img src="./images/mainlogo.png" alt="logo" className="w-[100%] rounded-lg" />
         </div>
-        <hr className="border-0 h-[1px] w-full bg-white " />
+        <hr className="border-0 h-[1px] w-full bg-white" />
 
         {/* Navigation Links */}
-        <nav className="flex flex-col justify-evenly  text-xl font-medium mt-10  ">
+        <nav className="flex flex-col justify-evenly text-xl font-medium mt-10">
           {navLinks.map((link) => (
             <Link
-              key={link.href}
               to={link.href}
-              className={`relative ${
-                  pathname === link.href
-                    ? 'text-yellow-400 font-bold'
-                    : 'hover:text-yellow-400'
-                } transition duration-300 ease-in-out transform  hover:scale-105 p-[10%] border-b-2 border-b-pink-800 hover:bg-blue-900 text-center `}
+              key={link.href} 
+              className={`hover:text-black transition duration-300 ease-in-out transform hover:scale-105 p-[10%] hover:bg-violet-600  flex items-center ${
+                pathname === link.href ? 'text-yellow-400 font-bold' : ''
+              }`}
             >
-              {link.label}
+              <div className="flex items-center justify-center">
+                {link.logo && <link.logo className="inline-block  text-gray-300" />} {/* Conditionally render the logo */}
+                <span className="ps-3">{link.label}</span>
+              </div>
             </Link>
           ))}
         </nav>

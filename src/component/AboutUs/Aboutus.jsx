@@ -8,9 +8,9 @@ const AboutUs = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center items-center">
           <img
-            src="./images/logo3.png"
+            src="./images/mainlogo.png"
             alt="About Us"
-            className="rounded-xl  object-cover w-2/3 h-full"
+            className="rounded-xl object-cover w-2/3 h-full bg-blue-300"
           />
         </div>
 
