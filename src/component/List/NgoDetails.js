@@ -15,13 +15,13 @@ const NgoDetails = [
       {
         field: 'Food',
         icon: '🍽️',
-        image: '/images/food.jpg',
+        image: '/images/hunger.jpg',
         description: 'Providing meals to underprivileged communities.'
       },
       {
         field: 'Shelter',
         icon: '🏠',
-        image: '/images/shelter.jpg',
+        image: '/images/collage.png',
         description: 'Building and maintaining shelters for the homeless.'
       },
       {

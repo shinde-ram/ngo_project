@@ -27,7 +27,7 @@ function OneNgo() {
                     </div>
 
                     <div className="w-full md:w-1/2 flex flex-col space-y-6">
-                        <div className="flex flex-wrap justify-around gap-6">
+                        <div className="flex  justify-around gap-6">
                             <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center transform hover:scale-105 transition duration-300 ease-in-out">
                                 <h4 className="text-xl font-semibold text-gray-700">Founded</h4>
                                 <p className="text-2xl font-bold text-blue-500 mt-2">{ngo.founded}</p>
